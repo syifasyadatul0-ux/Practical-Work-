@@ -1,0 +1,130 @@
+/* === Global Body Styling === */
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  background-color: #F4FDFF;
+  color: #1C448E;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header and Footer === */
+[data-role="header"], .ui-header {
+  background-color: #1C448E !important;
+  color: #F4FDFF !important;
+  border: none;
+}
+[data-role="footer"], .ui-footer {
+  background-color: #1C448E !important;
+  color: #F4FDFF;
+  border: none;
+}
+
+/* === Login Card === */
+.login-card {
+  background-color: #1C448E;
+  color: #F4FDFF;
+  max-width: 350px;
+  width: 90%;
+}
+.login-card label {
+  color: #F4FDFF !important;
+}
+
+/* === Booking Card === */
+.booking-card {
+  background-color: #1C448E;
+  color: #F4FDFF;
+}
+.booking-card label {
+  color: #F4FDFF !important;
+}
+
+/* === Buttons === */
+.btn-light {
+  background-color: #F4FDFF !important;
+  color: #1C448E !important;
+  border: 1px solid #1C448E;
+}
+.btn-light:hover {
+  background-color: #938BA1 !important;
+  color: #F4FDFF !important;
+}
+.btn-outline-light {
+  color: #F4FDFF !important;
+  border: 1px solid #F4FDFF !important;
+}
+.btn-outline-light:hover {
+  background-color: #F4FDFF !important;
+  color: #1C448E !important;
+}
+
+/* === Carousel Styling (Home Page) === */
+.carousel-inner img {
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(28, 68, 142, 0.3);
+}
+
+/* === Input Fields === */
+input, select {
+  border-radius: 8px !important;
+  border: 1px solid #938BA1 !important;
+}
+input:focus, select:focus {
+  border-color: #1C448E !important;
+  box-shadow: 0 0 3px #1C448E !important;
+}
+
+/* === Booking Confirmation Popup === */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 68, 142, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-content {
+  background: #ffffff;
+  color: #1C448E;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 15px;
+  border: 2px solid #1C448E;
+}
+
+/* === Compact Booking Form === */
+#booking-page .booking-card {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* Login page uses "banner.png" */
+.login-bg {
+  background: url('images/banner.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Home and Booking pages use "banner2.png" */
+.home-bg, .booking-bg {
+  background: url('images/banner2.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* === Navigation Logo === */
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Keep header height balanced */
+.header-bar {
+  min-height: 65px;
+}
